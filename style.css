@@ -76,6 +76,7 @@ img:hover {
 
 @media screen and (max-width: 1024px) {
   .nav-links {
+    overflow-x: hidden;
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -86,6 +87,7 @@ img:hover {
     overflow-x: hidden;
   }
   .nav-links {
+    overflow-x: hidden;
     position: absolute;
     right: 0px;
     height: 92vh;
