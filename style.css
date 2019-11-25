@@ -177,9 +177,9 @@ img:hover {
   opacity: 0.8;
   z-index: -10;
 }
-.frontmessage {
+/* .frontmessage {
   background-color: white;
-  width: 60%;
+  width: 80%;
   height: 60%;
   border-radius: 10px;
   top: 50%;
@@ -188,4 +188,47 @@ img:hover {
   transform: translate(-50%, -50%);
   opacity: 0.1;
   z-index: -9;
+} */
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills li {
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+#skills h2 {
+  padding: 30px;
+}
+#skills svg {
+  margin-top: 30px;
+}
+
+.button {
+  border: white solid 2px;
+  padding: 20px;
+  margin-top: 40px;
+  width: 250px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.5;
 }
