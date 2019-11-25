@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  height: 80px;
   background-color: transparent;
 }
 
@@ -160,8 +160,32 @@ img:hover {
 @media (max-aspect-ratio: 16/9) {
   #backgroundvideo {
     top: 0;
-
     width: auto;
     height: 100%;
   }
+}
+
+.backgroundopacity {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  z-index: -10;
+}
+.frontmessage {
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  z-index: -9;
 }
