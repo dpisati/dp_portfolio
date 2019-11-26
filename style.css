@@ -5,20 +5,25 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
+  height: 100px;
   background-color: transparent;
 }
 
-img {
-  margin-top: 5px;
+.logo {
+  margin-top: 20px;
   cursor: pointer;
 }
-img:hover {
-  opacity: 0.7;
+.logo:hover {
+  opacity: 0.5;
 }
 
 .container {
@@ -29,7 +34,7 @@ img:hover {
 }
 
 .logo {
-  color: honeydew;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 20px;
@@ -47,7 +52,7 @@ img:hover {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -55,7 +60,7 @@ img:hover {
 }
 
 .nav-links a:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .burger {
@@ -65,7 +70,7 @@ img:hover {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -93,7 +98,7 @@ img:hover {
     height: 92vh;
     top: 8vh;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,19 +109,90 @@ img:hover {
   .nav-links li {
     opacity: 0;
   }
+  .nav-links a {
+    color: white;
+  }
+
   .burger {
     display: block;
   }
-  #backgroundvideo {
-    display: none;
-  }
-  body {
-    background: url("./src/background_video_picture.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
 }
 
+.profile-picture {
+  background-image: url("./src/profile/profile.jpg");
+  background-size: 255px 255px, cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 50px;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-text {
+  text-align: center;
+  margin: 50px;
+}
+
+h1 {
+  margin: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+}
+
+.main-container ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#skills li {
+  color: black;
+  display: inline-flex;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+}
+
+#skills h2 {
+  padding: 30px;
+}
+#skills svg {
+  margin-top: 30px;
+}
+
+.button {
+  transform: scale(1);
+  transition: transform 0.2s ease-in;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 40px;
+  width: 250px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in;
+}
+
+#web-button {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+#design-button {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
 .nav-active {
   transform: translateX(0%);
 }
@@ -140,95 +216,4 @@ img:hover {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-#backgroundvideo {
-  top: 0;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  z-index: -100;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  #backgroundvideo {
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  #backgroundvideo {
-    top: 0;
-    width: auto;
-    height: 100%;
-  }
-}
-
-.backgroundopacity {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  opacity: 0.8;
-  z-index: -10;
-}
-/* .frontmessage {
-  background-color: white;
-  width: 80%;
-  height: 60%;
-  border-radius: 10px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  opacity: 0.1;
-  z-index: -9;
-} */
-
-.main-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 60%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#skills li {
-  color: white;
-  display: inline-flex;
-  justify-content: center;
-  width: 600px;
-  margin-bottom: 30px;
-}
-
-#skills h2 {
-  padding: 30px;
-}
-#skills svg {
-  margin-top: 30px;
-}
-
-.button {
-  border: white solid 2px;
-  padding: 20px;
-  margin-top: 40px;
-  width: 250px;
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-.button:hover {
-  opacity: 0.5;
 }
