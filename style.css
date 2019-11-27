@@ -236,6 +236,37 @@ h1 {
   transform: translateX(0%);
 }
 
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    overflow-x: hidden;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    color: white;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
 @keyframes navLinksFade {
   from {
     opacity: 0;
