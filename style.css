@@ -33,13 +33,6 @@ nav {
   align-items: center;
 }
 
-.logo {
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 20px;
-}
-
 .nav-links {
   z-index: 1;
   display: flex;
@@ -232,9 +225,6 @@ h1 {
     margin-bottom: 50px;
   }
 }
-.nav-active {
-  transform: translateX(0%);
-}
 
 @keyframes navLinksFade {
   from {
@@ -253,7 +243,6 @@ h1 {
 #myModal {
   display: none;
 }
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -267,7 +256,6 @@ h1 {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -283,7 +271,6 @@ h1 {
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {
@@ -295,7 +282,6 @@ h1 {
     opacity: 1;
   }
 }
-
 @keyframes animatetop {
   from {
     top: -300px;
@@ -314,24 +300,20 @@ h1 {
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
 .modal-header {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
 }
-
 .modal-body {
   padding: 2px 16px;
 }
-
 .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
@@ -341,13 +323,18 @@ h1 {
   body {
     overflow-x: hidden;
   }
+  nav {
+    height: 70px;
+  }
+  .logo {
+    margin-top: 5px;
+  }
   .hello-text {
     margin: 10px;
   }
   .profile-picture {
     margin-top: 50px;
   }
-
   h1 {
     font-size: 2em;
   }
@@ -355,28 +342,23 @@ h1 {
     font-size: 1em;
   }
   .nav-links {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: space-around;
+    display: none;
     width: 100%;
-    top: 15vh;
-    height: 85vh;
+    top: 70px;
+    height: 570px;
   }
+}
+.nav-active {
+  display: flex;
+  transform: translateX(0%);
+  animation: navFade 1s ease;
+}
 
-  .main-container ul {
-    display: block;
-    justify-content: center;
+@keyframes navFade {
+  from {
+    transform: translateX(340px);
   }
-
-  #skills li {
-    color: rgb(0, 0, 0);
-    display: block;
-    justify-content: center;
-    width: 80%;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+  to {
+    transform: translateX(0px);
   }
 }
