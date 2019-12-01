@@ -324,7 +324,7 @@ h1 {
     overflow-x: hidden;
   }
   nav {
-    height: 70px;
+    height: 15vh;
   }
   .logo {
     margin-top: 5px;
@@ -343,9 +343,9 @@ h1 {
   }
   .nav-links {
     display: none;
-    width: 100%;
-    top: 70px;
-    height: 570px;
+    width: 60%;
+    top: 15vh;
+    height: 77vh;
   }
 }
 .nav-active {
