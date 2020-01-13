@@ -362,3 +362,101 @@ h1 {
     transform: translateX(0px);
   }
 }
+
+.project01 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  background-color: rgb(236, 236, 236);
+}
+
+.project01 h3,
+.project01 p {
+  margin-bottom: 40px;
+  font-size: 1.5em;
+}
+
+.buttons01 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.picture01,
+.picture02,
+.picture03,
+.picture04,
+.picture05,
+.picture06,
+.picture07,
+.picture08 {
+  height: 100%;
+  width: 50%;
+  background: url(./src/apps_pictures/pokedex_app.png) no-repeat center center;
+  background-size: contain;
+}
+
+.picture02 {
+  background: url(./src/apps_pictures/weather_app.png) no-repeat center center;
+  background-size: contain;
+}
+.picture03 {
+  background: url(./src/apps_pictures/movie_app.png) no-repeat center center;
+  background-size: contain;
+}
+.picture04 {
+  background: url(./src/apps_pictures/meditation_app.png) no-repeat center
+    center;
+  background-size: contain;
+}
+.picture05 {
+  background: url(./src/apps_pictures/rock.png) no-repeat center center;
+  background-size: contain;
+}
+
+.picture06 {
+  background: url(./src/apps_pictures/calc_app.png) no-repeat center center;
+  background-size: contain;
+}
+.picture07 {
+  background: url(./src/apps_pictures/26.png) no-repeat center center;
+  background-size: contain;
+}
+.picture08 {
+  background: url(./src/apps_pictures/milion.png) no-repeat center center;
+  background-size: contain;
+}
+
+.right01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.buttons01 button {
+  margin: 10px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: lawngreen;
+}
+
+.buttons01 button:hover {
+  background-color: rgb(133, 211, 56);
+}
+
+#test {
+  display: block;
+  height: 300px;
+  width: 100%;
+  background-color: lightgrey;
+}
