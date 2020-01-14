@@ -413,6 +413,10 @@ h3,
 p {
   margin-bottom: 40px;
   font-size: 1.5em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8em;
 }
 
 .buttons01 {
@@ -508,4 +512,49 @@ p {
   background-color: rgb(88, 88, 88);
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project01,
+  .project02,
+  .project03,
+  .project04,
+  .project05,
+  .project06,
+  .project07,
+  .project08 {
+    display: block;
+  }
+  .picture01,
+  .picture02,
+  .picture03,
+  .picture04,
+  .picture05,
+  .picture06,
+  .picture07,
+  .picture08 {
+    width: 70%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right01,
+  .right02,
+  .right03,
+  .right04,
+  .right05,
+  .right06,
+  .right07,
+  .right08 {
+    display: block;
+    text-align: center;
+    width: 95%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
