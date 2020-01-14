@@ -11,11 +11,16 @@ a {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100px;
-  background-color: transparent;
+  background-color: white;
+  box-shadow: 0px 0.5px 80px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -87,6 +92,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .hello-text {
@@ -363,20 +369,48 @@ h1 {
   }
 }
 
-.project01 {
+.project01,
+.project02,
+.project03,
+.project04,
+.project05,
+.project06,
+.project07,
+.project08 {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-  height: 600px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
-  background-color: rgb(236, 236, 236);
+  /* margin-bottom: 60px; */
+  background-color: #f1f1f1;
+}
+.project02 {
+  background-color: white;
+}
+.project03 {
+  background-color: #f1f1f1;
+}
+.project04 {
+  background-color: white;
+}
+.project05 {
+  background-color: #f1f1f1;
+}
+.project06 {
+  background-color: white;
+}
+.project07 {
+  background-color: #f1f1f1;
+}
+.project08 {
+  background-color: white;
 }
 
-.project01 h3,
-.project01 p {
+h3,
+p {
   margin-bottom: 40px;
   font-size: 1.5em;
 }
@@ -395,6 +429,7 @@ h1 {
 .picture06,
 .picture07,
 .picture08 {
+  margin-left: 100px;
   height: 100%;
   width: 50%;
   background: url(./src/apps_pictures/pokedex_app.png) no-repeat center center;
@@ -441,22 +476,36 @@ h1 {
   height: 100%;
 }
 
-.buttons01 button {
-  margin: 10px;
-  width: 120px;
-  height: 40px;
+.button1,
+.button2 {
+  margin: 30px;
+  width: 180px;
+  height: 60px;
   border: none;
-  border-radius: 20px;
-  background-color: lawngreen;
+  border-radius: 40px;
+  background-color: rgb(88, 88, 88);
+  border: 3px solid rgb(88, 88, 88);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-out;
 }
 
-.buttons01 button:hover {
-  background-color: rgb(133, 211, 56);
+.button1:hover {
+  transition: 0.3s ease-out;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+.button2 {
+  background-color: transparent;
+  border: 3px solid rgb(88, 88, 88);
+  color: black;
 }
 
-#test {
-  display: block;
-  height: 300px;
-  width: 100%;
-  background-color: lightgrey;
+.button2:hover {
+  transition: 0.3s ease-out;
+  background-color: rgb(88, 88, 88);
+  color: white;
+  cursor: pointer;
 }
