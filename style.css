@@ -177,207 +177,10 @@ h1 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    overflow-x: hidden;
-    position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: 10vh;
-    background-color: black;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .nav-links a {
-    color: white;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1175px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-  }
-  .hello {
-    display: block;
-  }
-  .profile-picture {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-container ul {
-    display: block;
-    justify-content: center;
-  }
-
-  #skills li {
-    color: black;
-    display: block;
-    justify-content: center;
-    width: 80%;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-  }
-}
-
-@keyframes navLinksFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-/* ///////////////////////////////////////////////// */
-
-/* The Modal (background) */
-#myModal {
-  display: none;
-}
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  height: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-.modal-body {
-  padding: 2px 16px;
-}
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-  body {
-    overflow-x: hidden;
-  }
-  nav {
-    height: 15vh;
-  }
-  .logo {
-    margin-top: 5px;
-  }
-  .hello-text {
-    margin: 10px;
-  }
-  .profile-picture {
-    margin-top: 50px;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1em;
-  }
-  .nav-links {
-    display: none;
-    width: 60%;
-    top: 15vh;
-    height: 77vh;
-  }
-}
 .nav-active {
   display: flex;
   transform: translateX(0%);
   animation: navFade 1s ease;
-}
-
-@keyframes navFade {
-  from {
-    transform: translateX(340px);
-  }
-  to {
-    transform: translateX(0px);
-  }
 }
 
 .project01,
@@ -567,5 +370,145 @@ p {
   h2 {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    overflow-x: hidden;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    color: white;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  .hello {
+    display: block;
+  }
+  .profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-container ul {
+    display: block;
+    justify-content: center;
+  }
+
+  #skills li {
+    color: black;
+    display: block;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    height: 60px;
+  }
+  .logo {
+    margin-top: 5px;
+  }
+  .hello-text {
+    margin: 10px;
+  }
+  .profile-picture {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+  }
+  h1 {
+    margin-top: 100px;
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .scroll {
+    bottom: 70px;
+  }
+  .nav-links {
+    display: none;
+    width: 60%;
+    top: 15vh;
+    height: 77vh;
+  }
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  .button1,
+  .button2 {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    height: 50px;
+    width: 130px;
+  }
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navFade {
+  from {
+    transform: translateX(340px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
