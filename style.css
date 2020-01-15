@@ -432,7 +432,8 @@ p {
   }
 }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
+/* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
+@media screen and (max-width: 390px) {
   body {
     overflow-x: hidden;
   }
@@ -446,18 +447,19 @@ p {
     margin: 10px;
   }
   .profile-picture {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 200px;
     width: 200px;
   }
   h1 {
     margin-top: 100px;
     font-size: 1.7em;
+    margin-bottom: 30px;
   }
   h2 {
     font-size: 1em;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .scroll {
     bottom: 10px;
@@ -468,6 +470,16 @@ p {
     top: 50px;
     height: 95vh;
   }
+  .picture01,
+  .picture02,
+  .picture03,
+  .picture04,
+  .picture05,
+  .picture06,
+  .picture07,
+  .picture08 {
+    height: 220px;
+  }
   h3 {
     font-size: 1.3em;
     margin-bottom: 15px;
@@ -476,6 +488,14 @@ p {
     font-size: 1em;
     margin-bottom: 15px;
   }
+
+  .project05 h3 {
+    font-size: 1em;
+  }
+  .project05 p {
+    font-size: 0.9em;
+  }
+
   .button1,
   .button2 {
     margin: 10px;
