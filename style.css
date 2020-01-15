@@ -242,8 +242,8 @@ p.is-visible {
 .picture07,
 .picture08 {
   margin-left: 100px;
-  height: 80%;
-  width: 50%;
+  height: 40vw;
+  width: 40vw;
   background: url(./src/apps_pictures/pokedex_app.png) no-repeat center center;
   background-size: contain;
   opacity: 0;
@@ -252,6 +252,7 @@ p.is-visible {
     opacity 0.3s 0.35s ease-out;
   will-change: transform, opacity;
 }
+
 .picture01.is-visible,
 .picture02.is-visible,
 .picture03.is-visible,
@@ -359,83 +360,6 @@ p.is-visible {
   cursor: pointer;
   transition-delay: 0s;
 }
-
-@media only screen and (max-width: 1000px) {
-  .project01,
-  .project02,
-  .project03,
-  .project04,
-  .project05,
-  .project06,
-  .project07,
-  .project08 {
-    display: block;
-  }
-  .picture01,
-  .picture02,
-  .picture03,
-  .picture04,
-  .picture05,
-  .picture06,
-  .picture07,
-  .picture08 {
-    width: 70%;
-    height: 40%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .right01,
-  .right02,
-  .right03,
-  .right04,
-  .right05,
-  .right06,
-  .right07,
-  .right08 {
-    display: block;
-    text-align: center;
-    width: 95%;
-    height: 40%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    overflow-x: hidden;
-    position: absolute;
-    right: 0px;
-    height: 94vh;
-    top: 60px;
-    background-color: black;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .nav-links a {
-    color: white;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 1175px) {
   body {
     overflow-x: hidden;
@@ -481,6 +405,157 @@ p.is-visible {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .project01,
+  .project02,
+  .project03,
+  .project04,
+  .project05,
+  .project06,
+  .project07,
+  .project08 {
+    padding-top: 50px;
+    display: block;
+  }
+  .picture01,
+  .picture02,
+  .picture03,
+  .picture04,
+  .picture05,
+  .picture06,
+  .picture07,
+  .picture08 {
+    width: 70%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right01,
+  .right02,
+  .right03,
+  .right04,
+  .right05,
+  .right06,
+  .right07,
+  .right08 {
+    display: block;
+    text-align: center;
+    width: 95%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  h3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    height: 50px;
+  }
+  .logo {
+    margin-top: 5px;
+  }
+  .hello-text {
+    margin: 10px;
+  }
+  .profile-picture {
+    margin-top: 30px;
+    height: 200px;
+    width: 200px;
+  }
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-links {
+    overflow-x: hidden;
+    position: absolute;
+    right: 0px;
+    height: 94vh;
+    top: 60px;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    color: white;
+  }
+  .burger {
+    display: block;
+  }
+  .project01,
+  .project02,
+  .project03,
+  .project04,
+  .project05,
+  .project06,
+  .project07,
+  .project08 {
+    padding-top: 80px;
+  }
+  .picture01,
+  .picture02,
+  .picture03,
+  .picture04,
+  .picture05,
+  .picture06,
+  .picture07,
+  .picture08 {
+    height: 200px;
+  }
+  h3 {
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .project05 h3 {
+    font-size: 1.3em;
+  }
+  .project05 p {
+    font-size: 1.2em;
+  }
+
+  .button1,
+  .button2 {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 0.8em;
+    height: 50px;
+    width: 130px;
+  }
+}
+
 /* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
 @media screen and (max-width: 390px) {
   body {
@@ -519,6 +594,16 @@ p.is-visible {
     top: 50px;
     height: 95vh;
   }
+  .project01,
+  .project02,
+  .project03,
+  .project04,
+  .project05,
+  .project06,
+  .project07,
+  .project08 {
+    padding-top: 10px;
+  }
   .picture01,
   .picture02,
   .picture03,
@@ -532,10 +617,12 @@ p.is-visible {
   h3 {
     font-size: 1.3em;
     margin-bottom: 15px;
+    margin-top: 15px;
   }
   p {
     font-size: 1em;
     margin-bottom: 15px;
+    margin-top: 0px;
   }
 
   .project05 h3 {
