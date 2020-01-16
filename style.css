@@ -752,6 +752,7 @@ input {
     font-size: 12px;
     width: 90%;
     height: 70%;
+    padding: 5px 15px;
   }
   .contact {
     width: 95%;
@@ -766,11 +767,11 @@ input {
   }
 
   textarea {
-    height: 100px;
+    height: 130px;
     margin-bottom: 0px;
   }
   #send {
-    height: 35px;
+    height: 40px;
     width: 100px;
   }
 }
