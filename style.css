@@ -22,6 +22,8 @@ nav {
   background-color: white;
   box-shadow: 0px 0.5px 80px rgba(0, 0, 0, 0.1);
   z-index: 999;
+  animation-name: moveDown;
+  animation-duration: 1s;
 }
 
 .logo {
@@ -87,6 +89,10 @@ nav {
   background-position: center center;
   background-repeat: no-repeat;
   margin: 5vh;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 
 .hello {
@@ -105,6 +111,17 @@ h1 {
   margin: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 3em;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+h2 {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
 .scroll {
@@ -116,6 +133,10 @@ h1 {
   margin-right: auto;
   left: 0;
   right: 0;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: backwards;
 }
 
 .main-container ul {
@@ -360,6 +381,76 @@ p.is-visible {
   cursor: pointer;
   transition-delay: 0s;
 }
+
+.form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.form_container {
+  opacity: 0;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 40%;
+  height: 600px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  will-change: opacity;
+}
+
+.form_container.is-visible {
+  opacity: 1;
+  transition: opacity 1s 0.35s ease-out;
+}
+
+.contact {
+  width: 60%;
+}
+
+.contact_me {
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  resize: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  border: rgb(187, 187, 187) 1px solid;
+}
+input {
+  height: 30px;
+}
+
+#send {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+  opacity: 1;
+  margin: 0;
+}
+
 @media screen and (max-width: 1175px) {
   body {
     overflow-x: hidden;
@@ -402,6 +493,9 @@ p.is-visible {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+  }
+  .form_container {
+    width: 70%;
   }
 }
 
@@ -554,6 +648,12 @@ p.is-visible {
     height: 50px;
     width: 130px;
   }
+  .form_container {
+    width: 90%;
+  }
+  .contact {
+    width: 80%;
+  }
 }
 
 /* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
@@ -564,8 +664,16 @@ p.is-visible {
   nav {
     height: 50px;
   }
+  #logo {
+    height: 30px;
+  }
+  .burger {
+    margin-left: 50px;
+  }
+
   .logo {
     margin-top: 5px;
+    margin-right: 100px;
   }
   .hello-text {
     margin: 10px;
@@ -640,6 +748,31 @@ p.is-visible {
     height: 50px;
     width: 130px;
   }
+  .form_container {
+    font-size: 12px;
+    width: 90%;
+    height: 70%;
+  }
+  .contact {
+    width: 95%;
+    height: 90%;
+  }
+  .contact_me {
+    margin-bottom: 20px;
+  }
+  input,
+  textarea {
+    font-size: 10px;
+  }
+
+  textarea {
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  #send {
+    height: 35px;
+    width: 100px;
+  }
 }
 
 @keyframes navLinksFade {
@@ -675,4 +808,21 @@ p.is-visible {
   display: flex;
   transform: translateX(0%);
   animation: navFade 1s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
