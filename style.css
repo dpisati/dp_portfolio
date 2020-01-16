@@ -43,7 +43,9 @@ nav {
   text-align: center;
   line-height: 50px;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 .logo {
