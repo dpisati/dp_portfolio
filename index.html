@@ -16,20 +16,22 @@
     <title>Daniel Pisati</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav id="nav">
       <div class="logo">
-        <img
-          id="logo"
-          src="./src/logo/dps_black.png"
-          alt="dpisati"
-          height="40px"
-        />
+        <a href="#">
+          <img
+            id="logo"
+            src="./src/logo/dps_black.png"
+            alt="dpisati"
+            height="40px"
+        /></a>
       </div>
 
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="./pages/about/about.html">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#form">Contact</a></li>
       </ul>
 
@@ -40,6 +42,7 @@
       </div>
     </nav>
 
+    <!-- First Slide -->
     <div class="hello">
       <div class="hello-text show-on-scroll">
         <h1 id="hello">Hi, I'm Daniel</h1>
@@ -58,6 +61,7 @@
       </div>
     </div>
 
+    <!-- Projects -->
     <div id="projects" class="project01">
       <a target="_blanck" href="https://dpisati.github.io/pokedex_app/#/">
         <div class="picture01 show-on-scroll"></div
@@ -259,37 +263,73 @@
       </div>
     </div>
 
+    <!-- About -->
+    <div id="about" class="about">
+      <div class="about_left">
+        <img
+          src="./src/profile/profile.jpg"
+          alt="profile"
+          id="profile_about"
+          class="profile_about show-on-scroll"
+        />
+      </div>
+      <div class="about_right">
+        <div class="about_text">
+          <h4 class="bio_title show-on-scroll">
+            Hi! I'm Daniel :)
+          </h4>
+          <h4 class="bio show-on-scroll">
+            I'm a product designer, graduated as an Industrial Designer that is
+            passionate about learning and creating. When I was working as a
+            Project Manager in a software company I discovered the world of
+            coding and decided to dive deep in this completely new and exciting
+            Programming universe. With the internet help, I decided to be an
+            eternal student of this technology, that evolves and transforms
+            every day.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
     <div id="form" class="form">
       <div class="form_container show-on-scroll">
         <div class="contact">
-          <div class="contact_me">Be in touch!</div>
+          <div class="contact_me">Be In Touch!</div>
           <form method="post" id="reused_form">
-            <input
-              id="name"
-              type="text"
-              name="Name"
-              required
-              maxlength="50"
-              placeholder="Name"
-            />
-
-            <input
-              id="email"
-              type="email"
-              name="Email"
-              required
-              maxlength="50"
-              placeholder="Email"
-            />
-
-            <textarea
-              id="message"
-              name="Message"
-              rows="10"
-              maxlength="6000"
-              required
-              placeholder="Message"
-            ></textarea>
+            <div class="inputwrap">
+              <i class="fas fa-user"></i>
+              <input
+                id="name"
+                type="text"
+                name="Name"
+                required
+                maxlength="50"
+                placeholder="Name"
+              />
+            </div>
+            <div class="inputwrap">
+              <i class="fas fa-envelope"></i>
+              <input
+                id="email"
+                type="email"
+                name="Email"
+                required
+                maxlength="50"
+                placeholder="Email"
+              />
+            </div>
+            <div class="inputwrap" id="envelope">
+              <i class="fas fa-pen"></i>
+              <textarea
+                id="message"
+                name="Message"
+                rows="10"
+                maxlength="6000"
+                required
+                placeholder="Message"
+              ></textarea>
+            </div>
 
             <button class="button1 button-primary" type="submit" id="send">
               Send
@@ -312,6 +352,7 @@
       </div>
     </div>
 
+    <!-- Go to top Button -->
     <a id="gotop" href="#" style="display: none;">
       <div class="gotop"><i class="fas fa-angle-up"></i></div
     ></a>

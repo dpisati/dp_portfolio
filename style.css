@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,7 +49,6 @@ nav {
   animation-name: fade;
   animation-duration: 1s;
 }
-/* //update */
 
 .logo {
   margin-top: 5px;
@@ -405,12 +406,88 @@ p.is-visible {
   transition-delay: 0s;
 }
 
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.profile_about {
+  width: 350px;
+  height: 350px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  will-change: opacity;
+}
+
+.profile_about.is-visible {
+  opacity: 1;
+  transition: opacity 1s 0.35s ease-out;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+}
+
+.about_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_right {
+  width: 50%;
+}
+
+.about_text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4.bio_title {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  will-change: opacity;
+}
+.bio_title.is-visible {
+  opacity: 1;
+  transition: opacity 1s 0.85s ease-out;
+}
+
+h4.bio {
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2em;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.bio.is-visible {
+  opacity: 1;
+  transition: opacity 1s 1.45s ease-out;
+}
+
 .form {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 .form_container {
   opacity: 0;
@@ -449,7 +526,7 @@ input,
 textarea {
   display: inline-block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-left: 15px;
   align-items: center;
   padding-left: 10px;
   padding-top: 5px;
@@ -461,7 +538,10 @@ textarea {
   border: rgb(187, 187, 187) 1px solid;
 }
 input {
-  height: 30px;
+  height: 35px;
+}
+#envelope {
+  align-items: flex-start;
 }
 
 #send {
@@ -472,6 +552,17 @@ input {
   font-size: 1.1em;
   opacity: 1;
   margin: 0;
+}
+
+.inputwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.fa-pen {
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 1175px) {
@@ -568,6 +659,16 @@ input {
   }
   h3 {
     margin-top: 30px;
+  }
+  .about {
+    display: block;
+  }
+  .about_left,
+  .about_right {
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -796,6 +897,27 @@ input {
   #send {
     height: 40px;
     width: 100px;
+  }
+  h4.bio_title {
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+  .about_left {
+    height: 35%;
+  }
+
+  .about_left {
+    padding-top: 0px;
+  }
+
+  h4.bio {
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+  .profile_about {
+    width: 150px;
+    height: 150px;
   }
 }
 
