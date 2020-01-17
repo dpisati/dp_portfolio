@@ -870,7 +870,7 @@ input {
     display: none;
     width: 60%;
     top: 50px;
-    height: 95vh;
+    height: calc(100vh - 56px);
   }
   .project01,
   .project02,
