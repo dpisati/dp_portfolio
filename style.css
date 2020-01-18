@@ -70,7 +70,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
-  
 }
 
 .nav-links li {
@@ -538,7 +537,7 @@ h4.bio {
 .form_container {
   opacity: 0;
   border-radius: 10px;
-  background-color: height: calc((var(--vh, 1vh) * 100 -50px));f1f1f1;
+  background-color: f1f1f1;
   width: 40%;
   height: 600px;
   display: flex;
@@ -610,7 +609,6 @@ input {
 .fa-pen {
   padding-top: 5px;
 }
-
 @media screen and (max-width: 1175px) {
   body {
     overflow-x: hidden;
@@ -628,7 +626,6 @@ input {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    
   }
   .hello {
     display: block;
