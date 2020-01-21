@@ -838,6 +838,35 @@ input {
   }
 }
 
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .about_left {
+    height: 40%;
+  }
+  .profile_about {
+    width: 200px;
+    height: 200px;
+  }
+  h4.bio_title {
+    font-size: 1.5em;
+  }
+  h4.bio {
+    font-size: 0.9em;
+  }
+  .network {
+    height: 80px;
+  }
+}
+
 /* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
 @media screen and (max-width: 390px) {
   body {
