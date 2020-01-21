@@ -823,6 +823,19 @@ input {
   .contact {
     width: 80%;
   }
+  .about_left {
+    height: 40%;
+  }
+  .profile_about {
+    width: 250px;
+    height: 250px;
+  }
+  h4.bio_title {
+    font-size: 1.5em;
+  }
+  h4.bio {
+    font-size: 1.2em;
+  }
 }
 
 /* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
