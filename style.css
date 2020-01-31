@@ -491,7 +491,8 @@ h4.bio {
 }
 
 .face,
-.git {
+.git,
+.lkin {
   opacity: 0;
   height: 40px;
   width: 40px;
@@ -500,6 +501,10 @@ h4.bio {
   transform: scale(1);
   transition: transform 0.3s ease;
 }
+.lkin {
+  width: 40px;
+  height: 40px;
+}
 
 .face {
   background: url(./src/icons/facebook.png) center center no-repeat;
@@ -507,6 +512,10 @@ h4.bio {
 }
 .git {
   background: url(./src/icons/github.png) center center no-repeat;
+  background-size: cover;
+}
+.lkin {
+  background: url(./src/icons/linkedin.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -520,8 +529,15 @@ h4.bio {
   transform: scale(1);
   transition: transform 0.3s ease, opacity 1s 1.95s ease-out;
 }
+.lkin.is-visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.3s ease, opacity 1s 2.2s ease-out;
+}
+
 .face:hover,
-.git:hover {
+.git:hover,
+.lkin:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -1008,6 +1024,10 @@ input {
   }
   .face,
   .git {
+    width: 25px;
+    height: 25px;
+  }
+  .lkin {
     width: 25px;
     height: 25px;
   }
