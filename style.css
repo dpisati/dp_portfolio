@@ -363,11 +363,10 @@ p.is-visible {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  transition: 0.3s ease-out;
   opacity: 0;
   transform: translateY(50%);
   transition: transform 4s 0.35s cubic-bezier(0, 1, 0.3, 1),
-    opacity 0.3s 0.35s ease-out;
+    opacity 0.3s 0.35s ease-out, background-color 0.35s, color 0.35s;
   will-change: transform, opacity;
 }
 
@@ -377,12 +376,12 @@ p.is-visible {
   color: black;
   opacity: 1;
   transform: translateY(0%);
-  transition-delay: 0.7s;
+  /* transition-delay: 0.7s; */
 }
 .button1.is-visible {
   opacity: 1;
   transform: translateY(0%);
-  transition-delay: 0.3s;
+  transition-delay: opacity 0.35s;
 }
 
 .button1:hover {
@@ -390,7 +389,6 @@ p.is-visible {
   background-color: transparent;
   color: black;
   cursor: pointer;
-  transition-delay: 0s;
 }
 .button2 {
   background-color: transparent;
@@ -403,7 +401,6 @@ p.is-visible {
   background-color: rgb(88, 88, 88);
   color: white;
   cursor: pointer;
-  transition-delay: 0s;
 }
 
 .about {
