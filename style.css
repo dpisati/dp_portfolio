@@ -369,19 +369,22 @@ p.is-visible {
     opacity 0.3s 0.35s ease-out, background-color 0.35s, color 0.35s;
   will-change: transform, opacity;
 }
-
-.button2.is-visible {
+.button2 {
   background-color: transparent;
   border: 3px solid rgb(88, 88, 88);
   color: black;
-  opacity: 1;
-  transform: translateY(0%);
-  /* transition-delay: 0.7s; */
 }
+
 .button1.is-visible {
   opacity: 1;
   transform: translateY(0%);
   transition-delay: opacity 0.35s;
+}
+
+.button2.is-visible {
+  opacity: 1;
+  transform: translateY(0%);
+  /* transition-delay: 0.7s; */
 }
 
 .button1:hover {
@@ -389,11 +392,6 @@ p.is-visible {
   background-color: transparent;
   color: black;
   cursor: pointer;
-}
-.button2 {
-  background-color: transparent;
-  border: 3px solid rgb(88, 88, 88);
-  color: black;
 }
 
 .button2:hover {
@@ -862,6 +860,10 @@ input {
     margin-bottom: 30px;
     margin-top: 30px;
   }
+  .bio_title.is-visible {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
   .about_left {
     height: 40%;
   }
@@ -870,7 +872,7 @@ input {
     height: 200px;
   }
   h4.bio_title {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   h4.bio {
     font-size: 0.9em;
