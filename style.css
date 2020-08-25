@@ -206,6 +206,7 @@ h2 {
   transition: transform 0.2s ease-in;
 }
 
+.project00,
 .project01,
 .project02,
 .project03,
@@ -245,6 +246,9 @@ h2 {
 .project08 {
   background-color: white;
 }
+.project01 {
+  background-color: #f1f1f1;
+}
 
 h3,
 p {
@@ -278,6 +282,7 @@ p.is-visible {
   align-items: center;
 }
 
+.picture00,
 .picture01,
 .picture02,
 .picture03,
@@ -285,7 +290,8 @@ p.is-visible {
 .picture05,
 .picture06,
 .picture07,
-.picture08 {
+.picture08,
+.picture09 {
   margin-left: 100px;
   height: 40vw;
   width: 40vw;
@@ -298,6 +304,7 @@ p.is-visible {
   will-change: transform, opacity;
 }
 
+.picture00.is-visible,
 .picture01.is-visible,
 .picture02.is-visible,
 .picture03.is-visible,
@@ -305,13 +312,18 @@ p.is-visible {
 .picture05.is-visible,
 .picture06.is-visible,
 .picture07.is-visible,
-.picture08.is-visible {
+.picture08.is-visible,
+.picture09.is-visible {
   opacity: 1;
   transform: translateX(0%);
 }
 
 .picture02 {
   background: url(./src/apps_pictures/weather_app.png) no-repeat center center;
+  background-size: contain;
+}
+.picture00 {
+  background: url(./src/apps_pictures/ecollect.png) no-repeat center center;
   background-size: contain;
 }
 .picture03 {
@@ -338,6 +350,10 @@ p.is-visible {
 }
 .picture08 {
   background: url(./src/apps_pictures/milion.png) no-repeat center center;
+  background-size: contain;
+}
+.picture09 {
+  background: url(./src/apps_pictures/admin_app.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -680,6 +696,7 @@ input {
     padding-top: 50px;
     display: block;
   }
+  .picture00,
   .picture01,
   .picture02,
   .picture03,
@@ -687,7 +704,8 @@ input {
   .picture05,
   .picture06,
   .picture07,
-  .picture08 {
+  .picture08,
+  .picture09 {
     width: 70%;
     height: 40%;
     margin-left: auto;
@@ -792,6 +810,7 @@ input {
   .project08 {
     padding-top: 80px;
   }
+  .picture00,
   .picture01,
   .picture02,
   .picture03,
@@ -799,7 +818,8 @@ input {
   .picture05,
   .picture06,
   .picture07,
-  .picture08 {
+  .picture08,
+  .picture09 {
     height: 200px;
   }
   h3 {
@@ -938,6 +958,7 @@ input {
   .project08 {
     padding-top: 10px;
   }
+  .picture00,
   .picture01,
   .picture02,
   .picture03,
@@ -945,7 +966,8 @@ input {
   .picture05,
   .picture06,
   .picture07,
-  .picture08 {
+  .picture08,
+  .picture09 {
     height: 220px;
   }
   h3 {
