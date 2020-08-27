@@ -685,6 +685,7 @@ input {
 }
 
 @media only screen and (max-width: 1000px) {
+  .project00,
   .project01,
   .project02,
   .project03,
@@ -955,7 +956,8 @@ input {
   .project05,
   .project06,
   .project07,
-  .project08 {
+  .project08,
+  .project09 {
     padding-top: 10px;
   }
   .picture00,
