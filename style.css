@@ -248,7 +248,7 @@ h2 {
 .project08 {
   background-color: #f1f1f1;
 }
-.project01 {proffy_added"
+.project01 {
   background-color: white;
 }
 .project10 {
@@ -707,7 +707,9 @@ input {
   .project05,
   .project06,
   .project07,
-  .project08 {
+  .project08,
+  .project09,
+  .project10 {
     padding-top: 50px;
     display: block;
   }
@@ -823,7 +825,9 @@ input {
   .project05,
   .project06,
   .project07,
-  .project08 {
+  .project08,
+  .project09,
+  .project10 {
     padding-top: 80px;
   }
   .picture00,
