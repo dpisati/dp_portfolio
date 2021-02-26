@@ -217,7 +217,8 @@ h2 {
 .project08,
 .project09,
 .project10,
-.project11 {
+.project11,
+.project12 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -235,10 +236,10 @@ h2 {
   background-color: white;
 }
 .project04 {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 .project05 {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 .project06 {
   background-color: #f1f1f1;
@@ -247,19 +248,22 @@ h2 {
   background-color: white;
 }
 .project08 {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 .project01 {
-  background-color: white;
-}
-.project10 {
   background-color: #f1f1f1;
 }
-.project11 {
+.project10 {
   background-color: white;
 }
+.project11 {
+  background-color: #f1f1f1;
+}
+.project12 {
+  background-color: #f1f1f1;
+}
 .project00 {
-  background-color: white;
+  background-color: #f1f1f1;
 }
 
 h3,
@@ -305,7 +309,8 @@ p.is-visible {
 .picture08,
 .picture09,
 .picture10,
-.picture11 {
+.picture11,
+.picture12 {
   margin-left: 100px;
   height: 40vw;
   width: 40vw;
@@ -329,7 +334,8 @@ p.is-visible {
 .picture08.is-visible,
 .picture09.is-visible,
 .picture10.is-visible,
-.picture11.is-visible {
+.picture11.is-visible,
+.picture12.is-visible {
   opacity: 1;
   transform: translateX(0%);
 }
@@ -378,6 +384,10 @@ p.is-visible {
 }
 .picture11 {
   background: url(./src/apps_pictures/happy_app.png) no-repeat center center;
+  background-size: contain;
+}
+.picture12 {
+  background: url(./src/apps_pictures/motorly.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -720,7 +730,8 @@ input {
   .project08,
   .project09,
   .project10,
-  .project11 {
+  .project11,
+  .project12 {
     padding-top: 50px;
     display: block;
   }
@@ -735,7 +746,8 @@ input {
   .picture08,
   .picture09,
   .picture10,
-  .picture11 {
+  .picture11,
+  .picture12 {
     width: 70%;
     height: 40%;
     margin-left: auto;
@@ -854,7 +866,8 @@ input {
   .picture08,
   .picture09,
   .picture10,
-  .picture11 {
+  .picture11,
+  .picture12 {
     height: 200px;
   }
   h3 {
@@ -1007,7 +1020,8 @@ input {
   .picture08,
   .picture09,
   .picture10,
-  .picture11 {
+  .picture11,
+  .picture12 {
     height: 220px;
   }
   h3 {
