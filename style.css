@@ -226,14 +226,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 60px; */
   background-color: white;
 }
 .project02 {
   background-color: #f1f1f1;
 }
 .project03 {
-  background-color: white;
+  background-color: #f1f1f1;
 }
 .project04 {
   background-color: white;
@@ -734,6 +733,9 @@ input {
   .project12 {
     padding-top: 50px;
     display: block;
+    /* padding: 50px 0;
+    display: block; */
+    /* height: 100%; */
   }
   .picture00,
   .picture01,
@@ -842,6 +844,9 @@ input {
   .burger {
     display: block;
   }
+
+  .about,
+  .project00,
   .project01,
   .project02,
   .project03,
@@ -852,8 +857,16 @@ input {
   .project08,
   .project09,
   .project10,
-  .project11 {
-    padding-top: 80px;
+  .project11,
+  .project12 {
+    padding: 80px 0;
+    height: 100%;
+  }
+  .about_right {
+    margin-top: 60px;
+  }
+  .network {
+    margin-top: 30px;
   }
   .picture00,
   .picture01,
@@ -948,6 +961,30 @@ input {
   .network {
     height: 80px;
   }
+
+  .about,
+  .project00,
+  .project01,
+  .project02,
+  .project03,
+  .project04,
+  .project05,
+  .project06,
+  .project07,
+  .project08,
+  .project09,
+  .project10,
+  .project11,
+  .project12 {
+    padding: 40px 0;
+    height: 100%;
+  }
+  .about_right {
+    margin-top: 60px;
+  }
+  .network {
+    margin-top: 30px;
+  }
 }
 
 /* @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) { */
@@ -995,19 +1032,6 @@ input {
     width: 100%;
     height: 60vh;
     top: 50px;
-  }
-  .project01,
-  .project02,
-  .project03,
-  .project04,
-  .project05,
-  .project06,
-  .project07,
-  .project08,
-  .project09,
-  .project10,
-  .project11 {
-    padding-top: 10px;
   }
   .picture00,
   .picture01,
